@@ -9,9 +9,6 @@ module.exports = {
                 30: "30ms",
                 40: "40ms",
             },
-            // transitionDelay: {
-            //     350: "350ms",
-            // },
             fontFamily: {
                 rale: ["Raleway"],
             },
@@ -55,9 +52,5 @@ module.exports = {
             },
         },
     },
-    plugins: [
-        require("tailwindcss"),
-        require("autoprefixer"),
-        require("tailwind-scrollbar"),
-    ],
+    plugins: [require("tailwindcss"), require("autoprefixer")],
 };
