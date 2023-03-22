@@ -16,19 +16,17 @@ export function Card({
     const value =
         flexRow === false ? "justify-end flex-row-reverse" : "flex-row";
 
-    const toUpperCase = title.toUpperCase();
-
     return (
-        <div className={`flex ${value} w-[60rem] items-center gap-4 m-4`}>
+        <div className={`flex ${value} w-[80rem] items-center gap-4 m-8`}>
             <img
-                className="w-3/6 "
+                className="w-[40rem] border-4 border-bgBlack-700 "
                 src={image}
-                alt={`imagen del proyecto ${toUpperCase}`}
+                alt={`imagen del proyecto ${title}`}
             />
 
-            <div className="w-[30rem] m-8 ">
-                <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-bgMint-900">
-                    {toUpperCase}
+            <div className="w-[40rem] m-8 ">
+                <h2 className="mb-4 text-3xl tracking-tight font-extrabold uppercase text-bgMint-900">
+                    {title}
                 </h2>
 
                 <p className="mb-6 text-bgBlack-700 font-bold text-lg">

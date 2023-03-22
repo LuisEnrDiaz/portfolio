@@ -5,8 +5,9 @@ export function AboutMe() {
     return (
         <main className="body w-full h-screen p-4 ml-48">
             <Title title="ACERCA DE MI" width="w-56"></Title>
-            <div className="flex flex-wrap gap-4 justify-center">
-                <section className="w-[40rem] m-4 p-8 grid place-content-center">
+
+            <div className="grid grid-flow-col place-content-center  gap-4">
+                <section className="w-[40rem] m-4 p-8 pl-36 pt-28 grid place-content-center">
                     <DescriptionText>
                         <p>
                             Soy un apasionado cocinero que decidió cambiar de
@@ -51,7 +52,7 @@ export function AboutMe() {
                     </DescriptionText>
                 </section>
 
-                <section className="w-[45rem] grid place-content-center">
+                <section className="w-[45rem] grid place-content-center pl-36 pt-28">
                     <img src="./assets/AboutMe/luisAboutMe.png" alt="" />
                 </section>
             </div>

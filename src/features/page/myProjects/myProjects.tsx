@@ -6,7 +6,7 @@ export function MyProjects() {
         <main className="body h-auto p-4 w-full ml-48 ">
             <Title title="mis proyectos" width="w-64" />
 
-            <div className="grid grid-flow-row place-content-center m-4">
+            <div className="grid grid-flow-row place-content-center m-4 mt-28">
                 <Card
                     image="./assets/myProjects/form.png"
                     title="pokeapi"
