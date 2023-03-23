@@ -5,7 +5,7 @@ export function Card(card: CardI) {
         card.flexRow === false
             ? "lg:justify-end lg:flex-row-reverse"
             : "flex-row";
-    //w-[80rem]
+
     return (
         <div
             className={`flex lg:${value} flex-col items-center gap-4 m-0 max-sm:w-80 max-md:w-[30rem] lg:${value} lg:50rem`}
@@ -37,6 +37,8 @@ export function Card(card: CardI) {
 
                 <div className="flex m-4 max-[540px]:w-32">
                     <a
+                        target={"_blank"}
+                        rel="noopener noreferrer"
                         href={card.webLink}
                         className="m-4 relative px-6 py-3 font-bold text-black group"
                     >
@@ -46,6 +48,8 @@ export function Card(card: CardI) {
                     </a>
 
                     <a
+                        target={"_blank"}
+                        rel="noopener noreferrer"
                         href={card.codeLink}
                         className="m-4 relative px-6 py-3 font-bold text-black group"
                     >
