@@ -3,7 +3,7 @@ import { AppRoutes } from "../../routes/appRoutes";
 
 function App() {
     return (
-        <div className=" flex flex-row">
+        <div className="flex max-sm:flex-col max-md:flex-row h-auto w-auto">
             <Layout>
                 <AppRoutes></AppRoutes>
             </Layout>

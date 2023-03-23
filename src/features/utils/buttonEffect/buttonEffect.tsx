@@ -2,7 +2,7 @@ export function ButtonEffect({ id, name }: { id: string; name: string }) {
     return (
         <button
             id={id}
-            className="mx-5 group relative px-2.5 py-1.5 inline-block text-xl text-bgBlack-700 font-black tracking-wide active:top-0.5 active:outline-none focus:outline-none"
+            className="mx-5 group relative px-2.5 py-1.5 inline-block text-xl text-bgBlack-700 font-black tracking-wide active:top-0.5 active:outline-none focus:outline-none max-sm:m-2"
         >
             {/* Button text */}
 

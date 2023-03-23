@@ -3,11 +3,11 @@ import { Title } from "../../utils/title/title";
 
 export function AboutMe() {
     return (
-        <main className="body w-full h-screen p-4 ml-48">
+        <main className="body w-full p-4 ml-48 min-h-screen max-h-full flex flex-col max-sm:items-center max-sm:ml-0 max-sm:mt-20 max-md:ml-40 sm:justify-center lg:justify-between">
             <Title title="ACERCA DE MI" width="w-56"></Title>
 
-            <div className="grid grid-flow-col place-content-center  gap-4">
-                <section className="w-[40rem] m-4 p-8 pl-36 pt-28 grid place-content-center">
+            <div className="flex flex-col place-content-center gap-4 lg:flex-row mb-20">
+                <section className="grid place-content-center max-sm:w-72 max-sm:mt-12 max-sm:m-0 max-md:m-8 max-md:w-96 md:w-auto">
                     <DescriptionText>
                         <p>
                             Soy un apasionado cocinero que decidió cambiar de
@@ -52,7 +52,7 @@ export function AboutMe() {
                     </DescriptionText>
                 </section>
 
-                <section className="w-[45rem] grid place-content-center pl-36 pt-28">
+                <section className="grid place-content-center max-sm:w-60 max-md:w-[25rem] lg:w-[40rem]">
                     <img src="./assets/AboutMe/luisAboutMe.png" alt="" />
                 </section>
             </div>
