@@ -33,10 +33,13 @@ export function Home() {
                 <p className="text-4xl m-1 max-sm:text-2xl">
                     FullStack developer
                 </p>
-                <section className="flex flex-row text-black p-4 text-sm font-semibold">
+
+                <section className="flex flex-row text-black p-4 text-sm font-semibold m-4">
                     <div className="flex flex-row items-center cursor-pointer hover:text-blue-700">
                         <AiFillLinkedin></AiFillLinkedin>
                         <a
+                            target={"_blank"}
+                            rel="noopener noreferrer"
                             href="https://www.linkedin.com/in/luis-enr-diaz-garcia/"
                             className="p-2"
                         >
@@ -47,6 +50,8 @@ export function Home() {
                     <div className="flex flex-row items-center cursor-pointer hover:text-red-700">
                         <SiGmail></SiGmail>
                         <a
+                            target={"_blank"}
+                            rel="noopener noreferrer"
                             href="mailto:luisenrique0020@gmail.com"
                             className="p-2"
                         >
@@ -57,6 +62,8 @@ export function Home() {
                     <div className="flex flex-row items-center cursor-pointer hover:text-bgMint-700">
                         <AiFillGithub></AiFillGithub>
                         <a
+                            target={"_blank"}
+                            rel="noopener noreferrer"
                             href="https://github.com/LuisEnrDiaz"
                             className="p-2"
                         >
@@ -66,7 +73,7 @@ export function Home() {
                 </section>
             </div>
 
-            <div className="m-10 flex flex-wrap justify-center absolute bottom-0 max-sm:m-4  max-lg:content-center">
+            <div className="m-10 flex flex-wrap justify-center absolute bottom-0 max-sm:m-4 max-sm:mt-12  max-lg:content-center">
                 {abilities.map((e) => (
                     <ButtonEffect id={e.id} name={e.name} />
                 ))}

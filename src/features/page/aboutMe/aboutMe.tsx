@@ -6,7 +6,7 @@ export function AboutMe() {
         <main className="body w-full p-4 ml-48 min-h-screen max-h-full flex flex-col max-sm:items-center max-sm:ml-0 max-sm:mt-20 max-md:ml-40 sm:justify-center lg:justify-between">
             <Title title="ACERCA DE MI" width="w-56"></Title>
 
-            <div className="flex flex-col place-content-center gap-4 lg:flex-row mb-20">
+            <div className="flex flex-col place-content-center gap-4 max-sm:items-center lg:flex-row mb-20">
                 <section className="grid place-content-center max-sm:w-72 max-sm:mt-12 max-sm:m-0 max-md:m-8 max-md:w-96 md:w-auto">
                     <DescriptionText>
                         <p>
