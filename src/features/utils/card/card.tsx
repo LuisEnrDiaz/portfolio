@@ -8,15 +8,15 @@ export function Card(card: CardI) {
 
     return (
         <div
-            className={`flex lg:${value} flex-col items-center gap-4 m-0 max-sm:w-80 max-md:w-[30rem] lg:${value} lg:50rem`}
+            className={`flex lg:${value} flex-col justify-center items-center gap-4 m-0 max-sm:w-80 max-md:w-[25rem] lg:${value} md:w-[30rem]`}
         >
             <img
-                className="border-4 border-bgBlack-700 max-sm:w-72 max-md:w-80 max-lg:w-[25rem] lg:w-[35rem]"
+                className="border-4 m-2 border-bgBlack-700 max-sm:w-72 max-md:w-80 max-lg:w-[20rem] lg:w-[18rem] md:w-[20rem] xl:w-[30rem]"
                 src={card.image}
                 alt={`imagen del proyecto ${card.title}`}
             />
 
-            <div className="m-8 max-sm:w-72 max-md:w-96 max-lg:w-[25rem] lg:w-[30rem]">
+            <div className="m-8 flex flex-col items-center max-sm:w-72 max-md:w-80 max-lg:w-[25rem] lg:w-[15rem] md:w-[30rem] xl:w-[30rem]">
                 <h2 className="mb-4 text-3xl tracking-tight font-extrabold uppercase text-bgMint-900">
                     {card.title}
                 </h2>
@@ -31,11 +31,11 @@ export function Card(card: CardI) {
                     </span>
                 )}
 
-                <p className="mb-6 text-bgBlack-700 font-bold text-lg">
+                <p className="mb-6 text-bgBlack-700 font-bold text-lg p-2 xl:w-[30rem] md:w-[18rem] xl:text-2xl">
                     {card.description}
                 </p>
 
-                <div className="flex m-4 max-[540px]:w-32">
+                <div className="flex m-4 max-sm:m-0 max-sm:mr-24 max-[540px]:w-32">
                     <a
                         target={"_blank"}
                         rel="noopener noreferrer"

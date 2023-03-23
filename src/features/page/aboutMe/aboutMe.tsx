@@ -7,7 +7,7 @@ export function AboutMe() {
             <Title title="ACERCA DE MI" width="w-56"></Title>
 
             <div className="flex flex-col place-content-center gap-4 max-sm:items-center lg:flex-row mb-20">
-                <section className="grid place-content-center max-sm:w-72 max-sm:mt-12 max-sm:m-0 max-md:m-8 max-md:w-96 md:w-auto">
+                <section className="grid place-content-center max-sm:w-72 max-sm:mt-12 max-sm:m-0 max-md:m-8 max-md:w-96 md:w-auto lg:w-[20rem] md:mt-8 xl:w-[50rem] ">
                     <DescriptionText>
                         <p>
                             Soy un apasionado cocinero que decidió cambiar de
@@ -52,7 +52,7 @@ export function AboutMe() {
                     </DescriptionText>
                 </section>
 
-                <section className="grid place-content-center max-sm:w-60 max-md:w-[25rem] lg:w-[40rem]">
+                <section className="grid place-content-center max-sm:w-60 max-md:w-[25rem] lg:w-[20rem] xl:w-[40rem]">
                     <img src="./assets/AboutMe/luisAboutMe.png" alt="" />
                 </section>
             </div>

@@ -3,10 +3,10 @@ import { Title } from "../../utils/title/title";
 
 export function MyProjects() {
     return (
-        <main className="body w-full p-4 ml-48 min-h-screen max-h-full flex flex-col max-sm:items-center max-sm:ml-0 max-sm:mt-20 max-md:ml-40 sm:justify-center max-md:items-center">
+        <main className="body w-full p-4 ml-48 min-h-screen max-h-full flex flex-col max-sm:items-center max-sm:ml-0 max-sm:mt-20 max-md:ml-0 md:ml-48 sm:justify-center max-md:items-center max-lg:w-full">
             <Title title="mis proyectos" width="w-64" />
 
-            <div className="grid grid-flow-row place-content-center m-4 mt-28">
+            <div className="grid place-items-center m-4 mt-28">
                 <Card
                     image="./assets/myProjects/form.png"
                     title="Formulario"
