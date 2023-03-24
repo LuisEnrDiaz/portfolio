@@ -17,7 +17,7 @@ export function Home() {
         { id: "9", name: "MongoDB" },
         { id: "10", name: "Tailwind" },
     ];
-    //justify - between;
+
     return (
         <main className="body w-full p-4 ml-48 h-screen flex flex-col items-center max-sm:items-center max-sm:ml-0 max-sm:mt-20 max-md:ml-40 sm:justify-center max-md:items-center">
             <img
@@ -34,7 +34,7 @@ export function Home() {
                     FullStack developer
                 </p>
 
-                <section className="flex flex-row text-black p-4 text-sm font-semibold m-4">
+                <div className="flex flex-row text-black p-4 text-sm font-semibold m-4">
                     <div className="flex flex-row items-center cursor-pointer hover:text-blue-700">
                         <AiFillLinkedin></AiFillLinkedin>
                         <a
@@ -70,12 +70,12 @@ export function Home() {
                             Github
                         </a>
                     </div>
-                </section>
+                </div>
             </div>
 
             <div className="m-10 flex flex-wrap justify-center absolute bottom-0 max-sm:m-4 max-sm:mt-12  max-lg:content-center">
-                {abilities.map((e) => (
-                    <ButtonEffect id={e.id} name={e.name} />
+                {abilities.map((e: abilitiesI) => (
+                    <ButtonEffect key={e.id} id={e.id} name={e.name} />
                 ))}
             </div>
         </main>
